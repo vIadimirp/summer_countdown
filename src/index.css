@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Roboto", "sans-serif";
+    font-size: 20px;
+    position: relative;
+    scrollbar-width: 0;
+    /* overflow: hidden; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #111;
+        --text-color-2: #555;
+        --sep-color: #0002;
+        --bg-color: #fff;
+        --bg-color-2: #0001;
+        --bar-color: #008d36;
+        --bar-bg-color: #00e457a0;
+        --bar-color-2: #7c1900;
+        --bar-bg-color-2: #e42e00a0;
+        --bar-color-3: #005b97;
+        --bar-bg-color-3: #0089e4a0;
+        --bar-color-4: #8f9900;
+        --bar-bg-color-4: #d5e400a0;
+        --firework-color: var(--bar-color);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #eee;
+        --text-color-2: #aaa;
+        --sep-color: #fff2;
+        --bg-color: #222;
+        --bg-color-2: #ffffff0a;
+        --bar-color: #00e457;
+        --bar-bg-color: #00e45730;
+        --bar-color-2: #e42e00;
+        --bar-bg-color-2: #e42e0030;
+        --bar-color-3: #0089e4;
+        --bar-bg-color-3: #0089e430;
+        --bar-color-4: #d5e400;
+        --bar-bg-color-4: #d5e40030;
+        --firework-color: var(--bar-color);
+    }
+}

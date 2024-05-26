@@ -1,0 +1,132 @@
+div.summerNotNow div.barSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    
+    /* background-color: var(--bg-color-2);
+    padding: 1em;
+    border-radius: 1em; */
+}
+
+div.summerNotNow div.barSection div.text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+div.summerNotNow div.barSection div.percentText span:last-child {
+    text-align: right;
+}
+
+div.summerNotNow div.barSection div.nowText {
+    display: none;
+    text-align: center;
+}
+
+
+div.summerNotNow div.seasonsSection {
+    display: flex;
+    gap: 1em;
+}
+
+div.summerNotNow div.seasonCard {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    width: 33.3%;
+}
+
+
+div.summerNotNow div.infoSection {
+    display: flex;
+    gap: 1em;
+}
+
+div.summerNotNow div.infoCard {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    width: 50%;
+}
+
+div.summerNotNow div.infoCard div.heading {
+    display: block;
+    text-align: center;
+}
+
+div.summerNotNow div.infoCard span {
+    display: block;
+}
+div.summerNotNow div.infoCard span::before {
+    content: ' - ';
+    color: var(--text-color-2);
+}
+
+
+@media (max-width: 1000px) {
+
+    div.summerNotNow div.seasonsSection {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    div.summerNotNow div.barSection {
+        font-size: 15px;
+    }
+
+    div.summerNotNow div.infoSection {
+        font-size: 15px;
+    }
+
+    div.summerNotNow div.seasonsSection {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    div.summerNotNow div.barSection div.nowText {
+        display: block;
+    }
+
+    div.summerNotNow div.barSection div.datesText span.now {
+        display: none;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    div.summerNotNow div.infoSection {
+        flex-direction: column;
+    }
+
+    div.summerNotNow div.infoCard {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    div.summerNotNow div.barSection div.percentText {
+        flex-direction: column;
+        gap: .5em;
+    }
+
+    div.summerNotNow div.barSection div.percentText span {
+        text-align: left !important;
+    }
+
+    div.summerNotNow div.headingSection {
+        font-size: 15px;
+    }
+
+}

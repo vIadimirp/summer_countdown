@@ -1,0 +1,105 @@
+div.summerSection div.card {
+    background-color: var(--bg-color-2);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+div.summerSection div.sep {
+    width: 100%;
+    height: .1em;
+    border-radius: 1em;
+    background-color: var(--sep-color);
+}
+
+div.summerSection .textSecondary {
+    color: var(--text-color-2);
+}
+
+div.summerSection .textTitle {
+    font-size: 2em;
+}
+
+
+div.summerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    padding: 3em 2em;
+}
+
+
+div.summerSection div.headingSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+
+div.summerSection div.bar {
+    width: 100%;
+    height: 1em;
+    border-radius: .5em;
+    position: relative;
+    overflow: hidden;
+}
+div.summerSection div.barGreen {
+    background-color: var(--bar-bg-color);
+}
+div.summerSection div.barOrange {
+    background-color: var(--bar-bg-color-2);
+}
+div.summerSection div.barBlue {
+    background-color: var(--bar-bg-color-3);
+}
+div.summerSection div.barYellow {
+    background-color: var(--bar-bg-color-4);
+}
+
+div.summerSection div.bar div.barLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: .5em;
+}
+div.summerSection div.barGreen div.barLeft {
+    background-color: var(--bar-color);
+}
+div.summerSection div.barOrange div.barLeft {
+    background-color: var(--bar-color-2);
+}
+div.summerSection div.barBlue div.barLeft {
+    background-color: var(--bar-color-3);
+}
+div.summerSection div.barYellow div.barLeft {
+    background-color: var(--bar-color-4);
+}
+
+
+div.firework {
+    border-radius: 100%;
+    width: 0;
+    height: 0;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation: fireworkAnimation 1.5s ease-out;
+}
+div.fireworkGreen {
+    background-color: var(--firework-color);
+}
+
+@keyframes fireworkAnimation {
+    to {
+        opacity: 0;
+        width: min(300vh, 300vw);
+        height: min(300vh, 300vw);
+    }
+}
